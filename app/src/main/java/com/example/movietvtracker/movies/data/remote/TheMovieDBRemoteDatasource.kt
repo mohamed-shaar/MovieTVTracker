@@ -2,7 +2,6 @@ package com.example.movietvtracker.movies.data.remote
 
 import com.example.movietvtracker.movies.data.remote.model.MovieRemoteModel
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.runBlocking
 
 class TheMovieDBRemoteDatasource: MoviesRemoteDataSource {
     override suspend fun execute(): List<MovieRemoteModel> {
