@@ -6,9 +6,7 @@ import kotlinx.coroutines.runBlocking
 
 class TheMovieDBRemoteDatasource: MoviesRemoteDataSource {
     override suspend fun execute(): List<MovieRemoteModel> {
-        runBlocking {
-            delay(3000)
-        }
+        delay(3000)
         val mockMovies = listOf(
             MovieRemoteModel(
                 id = 1001,
