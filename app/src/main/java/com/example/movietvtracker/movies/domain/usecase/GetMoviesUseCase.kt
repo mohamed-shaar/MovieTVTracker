@@ -10,8 +10,8 @@ class GetMoviesUseCase(
     private val moviesRepository: MoviesRepository,
 ) {
     suspend fun execute(): List<MovieDisplayModel> {
-        val movieRemoteList = moviesRepository.getMovies()
-        val movieList = movieRemoteList.map {
+        val remoteMovies = moviesRepository.getMovies()
+        val movies = remoteMovies.map {
             MovieDisplayModel(
                 id = it.id,
                 description = it.overview,
@@ -20,7 +20,7 @@ class GetMoviesUseCase(
                 title = it.title,
             )
         }
-        return movieList
+        return movies
     }
 
     private fun parseDate(dateString: String): Date? {
