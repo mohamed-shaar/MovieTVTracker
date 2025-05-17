@@ -4,7 +4,6 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.movietvtracker.series.domain.model.Series
-import com.example.movietvtracker.series.domain.model.toUiModel
 import com.example.movietvtracker.series.domain.usecase.GetSeriesUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
