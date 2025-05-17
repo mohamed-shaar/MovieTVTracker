@@ -18,8 +18,10 @@ class MoviesViewModel @Inject constructor(
     private val _moviesState = MutableStateFlow<MoviesUIState>(MoviesUIState.Loading)
     val moviesState: StateFlow<MoviesUIState> get() = _moviesState.asStateFlow()
 
-
-    fun execute() {
+    init {
+        execute()
+    }
+    private fun execute() {
         viewModelScope.launch {
             try {
                 _moviesState.value = MoviesUIState.Loading

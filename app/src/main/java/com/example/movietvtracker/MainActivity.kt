@@ -16,17 +16,13 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
-    private val moviesViewModel by viewModels<MoviesViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        moviesViewModel.execute()
         setContent {
             MovieTVTrackerTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MoviesScreen(moviesViewModel, innerPadding)
-                }
+                MainScreen()
             }
         }
     }
