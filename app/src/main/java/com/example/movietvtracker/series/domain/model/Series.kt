@@ -11,5 +11,3 @@ data class Series(
     val releaseDate: String
 )
 
-fun Series.toUiModel(): UiSeries =
-    UiSeries(id = id, title = title, thumb = poster, releaseDate = releaseDate)
