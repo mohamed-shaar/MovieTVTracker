@@ -1,6 +1,6 @@
 package com.example.movietvtracker.movies.domain.usecase
 
-import com.example.movietvtracker.movies.domain.model.MovieDisplayModel
+import com.example.movietvtracker.movies.presentation.model.MovieDisplayModel
 import com.example.movietvtracker.movies.domain.repository.MoviesRepository
 import java.text.SimpleDateFormat
 import java.util.Date
