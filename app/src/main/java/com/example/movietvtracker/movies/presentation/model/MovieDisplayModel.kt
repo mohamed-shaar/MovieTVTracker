@@ -1,4 +1,4 @@
-package com.example.movietvtracker.movies.domain.model
+package com.example.movietvtracker.movies.presentation.model
 
 import java.util.Date
 
