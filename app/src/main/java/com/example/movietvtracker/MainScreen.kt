@@ -2,7 +2,7 @@ package com.example.movietvtracker
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.List
+import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
@@ -30,7 +30,7 @@ fun MainScreen() {
                 val currentRoute = navBackStackEntry?.destination?.route
 
                 NavigationBarItem(
-                    icon = { Icon(Icons.Default.List, contentDescription = "Series") },
+                    icon = { Icon(Icons.AutoMirrored.Filled.List, contentDescription = "Series") },
                     label = { Text("Series") },
                     selected = currentRoute == "series",
                     onClick = {
